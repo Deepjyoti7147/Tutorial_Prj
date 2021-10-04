@@ -1,18 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/Quantity"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="QUANTITY"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/qtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Quantity"
+                android:layout_toEndOf="@+id/add"
+                android:text="@string/Qtr"
+                android:layout_marginTop="10dp"
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/orderbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add"
+                android:text="Order"
+                android:layout_marginStart="20dp"/>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Quantity"
+                android:layout_marginEnd="16dp"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Quantity"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/qtr"
+                android:text="-" />
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
