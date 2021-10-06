@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             updateValue()
         }
         findViewById<Button>(R.id.sub).setOnClickListener {
-            quantity--
+            quantity-- //SUMAN SAMANTA
             updateValue()
         }
 
