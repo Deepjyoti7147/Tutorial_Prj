@@ -26,18 +26,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.sub).setOnClickListener {
-            if(quantity<=0)
-                println("NO ORDERS!")
-            else
-            {
+            if(quantity<=0) {
                 quantity--
                 updateValue()
             }
 
-            if(price<=0)
-                println("NO ORDERS!")
-            else
-            {
+            if(price>0) {
                 price -=3
                 updateValue()
             }
