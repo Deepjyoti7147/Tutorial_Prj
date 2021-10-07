@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Tutorial App</string>
     <string name="Qtr">0</string>
+<<<<<<< Updated upstream
     <string name="prc">0</string>
     <string name="cur">$</string>
+=======
+    <string name="pricevalue">0</string>
+>>>>>>> Stashed changes
 </resources>

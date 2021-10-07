@@ -44,6 +44,7 @@
                 android:textSize="23sp" />
 
             <TextView
+<<<<<<< Updated upstream
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/qtr"
@@ -63,14 +64,51 @@
                 android:layout_toEndOf="@+id/add"
                 android:text="@string/prc"
                 android:textSize="24sp" />
+=======
+                android:id="@+id/pricetxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qtr"
+                android:layout_centerHorizontal="true"
+                android:text="Price"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:id="@+id/pricelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pricetxt"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pricevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pricevalue"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="23sp" />
+            </LinearLayout>
+>>>>>>> Stashed changes
 
             <Button
                 android:id="@+id/orderbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< Updated upstream
                 android:layout_below="@+id/prc"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="15dp"
+=======
+                android:layout_below="@+id/pricelayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+>>>>>>> Stashed changes
                 android:text="Order" />
 
             <Button

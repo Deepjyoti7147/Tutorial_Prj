@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
         <entry key="..\:/Users/ANKITA/AndStudios/Tutorial_Prj/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
+=======
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27245508982035926" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>
