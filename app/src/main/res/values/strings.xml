@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Tutorial App</string>
     <string name="Qtr">0</string>
+    <string name="PRICE">PRICE</string>
 </resources>

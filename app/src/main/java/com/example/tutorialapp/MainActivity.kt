@@ -9,27 +9,36 @@ class MainActivity : AppCompatActivity() {
 
 
     private var quantity: Int = 0
+    private var price: Int = 0
     private fun updateValue() {
         findViewById<TextView>(R.id.qtr).text = quantity.toString()
+        findViewById<TextView>(R.id.value).text = price.toString()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override
+        fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.activity_main)
 
 
+            findViewById<Button>(R.id.add).setOnClickListener {
+                quantity++
+                price += 3
+                updateValue()
+            }
+            findViewById<Button>(R.id.sub).setOnClickListener {
+                if (quantity == 0) {
+                    quantity = 0
+                    price=0
+                } else {
+                    quantity--
+                    price-=3
+                }
+                updateValue()
+            }
 
-
-        findViewById<Button>(R.id.add).setOnClickListener {
-            quantity++
-            updateValue()
         }
-        findViewById<Button>(R.id.sub).setOnClickListener {
-            quantity-- //SUMAN SAMANTA
-            updateValue()
-        }
-
     }
 
-}
+
 

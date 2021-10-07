@@ -6,22 +6,24 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="413dp"
+        android:layout_height="727dp"
         android:orientation="vertical"
-        tools:ignore="HardcodedText">
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="4dp">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             tools:ignore="UselessParent">
+
             <TextView
                 android:id="@+id/Quantity"
-                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="16dp"
                 android:text="QUANTITY"
                 android:textSize="23sp" />
@@ -31,18 +33,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/Quantity"
+                android:layout_marginTop="10dp"
                 android:layout_toEndOf="@+id/add"
                 android:text="@string/Qtr"
-                android:layout_marginTop="10dp"
                 android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qtr"
+                android:layout_centerHorizontal="true"
+                android:text="@string/PRICE" />
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_centerHorizontal="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/price"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/value"
+                android:text="$" />
+
 
             <Button
                 android:id="@+id/orderbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/add"
-                android:text="Order"
-                android:layout_marginStart="20dp"/>
+                android:layout_below="@+id/value"
+                android:layout_centerHorizontal="true"
+                android:text="Order" />
 
             <Button
                 android:id="@+id/add"
@@ -60,6 +88,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@+id/qtr"
                 android:text="-" />
+
         </RelativeLayout>
 
     </RelativeLayout>
